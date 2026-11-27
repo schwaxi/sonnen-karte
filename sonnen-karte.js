@@ -1,4 +1,4 @@
-// sonnen-karte v1.0.0
+// sonnen-karte v1.0.1
 // Einzeln installierbares Modul (Home Assistant Marketplace / HACS, Kategorie Dashboard).
 window.customCards = window.customCards || [];
 window.customCardFeatures = window.customCardFeatures || [];
@@ -151,7 +151,7 @@ class SonnenKarte extends HTMLElement {
 
 if (!customElements.get(TYPE10)) customElements.define(TYPE10, SonnenKarte);
 if (!window.customCards.some((c) => c.type === TYPE10)) {
-  window.customCards.push({ type: TYPE10, name: "Sonnen-Karte", description: "Sonnenbogen mit Dämmerung, Auf- und Untergang, Mittag und Tageslänge" });
+  window.customCards.push({ type: TYPE10, name: "Sonnen-Karte", description: "Sonnenbogen mit Dämmerung, Auf- und Untergang, Mittag und Tageslänge", preview: true });
 }
 
 // Eingabemaske (visueller Editor) und Startwerte
